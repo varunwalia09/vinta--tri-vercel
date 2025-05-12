@@ -1,0 +1,159 @@
+/* Section for the About page */
+.about-section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  /* background-color: #f4f4f4; */
+}
+
+/* Container for centering content */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Style for the content block */
+.about-content h1 {
+     font-family: "Dirtyline 36Daysoftype 2022";
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-size: 93.12px;
+  font-weight: bold;
+  line-height: 70.8px;
+}
+
+/* Style for the description text */
+.about-description {
+  margin-top: 20px;
+  font-size: 12.48px; /* Adjust text size */
+  text-align: center;
+  /* color: #555;  */
+  max-width: 800px; /* Limit the width of the text */
+  line-height: 16.32px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Style for TRIONN® text with animation */
+.trionn-description {
+  margin-top: 400px; 
+  font-size: 48px; 
+  text-align: center;
+  /* color: #333; */
+  /* max-width: 800px; */
+  line-height: 57.6px;
+  opacity: 0; 
+   font-family: "Dirtyline 36Daysoftype 2022";
+}
+/* Hero section with background image */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image with lower opacity */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://trionn.com/_next/static/media/lion.2b10529a.webp'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* Text content centered over the image */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  text-align: center;
+}
+
+/* Headings style */
+.hero-content h1 {
+    font-family: "Dirtyline 36Daysoftype 2022";
+  margin: 0;
+  font-size: 211.2px;
+  font-weight: bold;
+  line-height: 155.52px;
+  letter-spacing: -6px;
+  font-variant: lining-nums;
+}
+
+/* hero-content */
+.hero-content-2{
+    margin-top: 250px;
+    line-height: 57.6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 0px;
+    font-size: 48px;
+}
+.hero-content-2 h2{
+    margin-left: 150px;
+   text-align: left;
+}
+/* button section */
+.hero-content-2 button {
+  margin-top: 50px;
+  margin-left: 150px;
+  padding: 2px 28px;
+ border: 2px solid #c4FBFB;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-content-2 button:hover {
+  transform: translateY(-2px);
+}
+
+/* right-aligned-section */
+.right-aligned-section {
+  width: 100%;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -30px;
+  margin-top: -180px;
+}
+
+.right-text {
+  max-width: 700px;
+  text-align: left;
+  font-size: 20.256px;
+  line-height: 28.8px;
+ 
+}
+.right-text p {
+  margin-bottom: 20px; /* Adjust space as needed */
+}
+.paragraph-gap {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* 
+color: #c4FBFB;
+ border: 2px solid #c4FBFB; */

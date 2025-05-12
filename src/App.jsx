@@ -3,7 +3,8 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import './App.css'
 import Home from './Components/Home.jsx';
 import NavBar from "./Components/NavBar.jsx";
-import About from "./Components/About.jsx";
+import About from "./Components/About/About.jsx";
+import AboutCard from "./Components/About/AboutCard.jsx";
 // import Project from "./Components/Project.jsx";
 // import CardSection from "./Components/CardSection.jsx";
 import DayNightToggle from './Components/DayNightToggle.jsx';

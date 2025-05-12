@@ -1,0 +1,80 @@
+/* TENTH-1 & ELEVEN-1 SECTION */
+.tenth-section-1 h1 {
+  font-size: 129px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 110px;
+  line-height: 6rem;
+}
+
+.eleven-section-1 h1 {
+  font-size: 35px;
+  line-height: 2.8rem;
+  justify-self: end;
+  margin-right: 60px;
+  margin-bottom: -60px;
+}
+
+.eleven-section {
+  margin-top: -100px; /* move the whole section up */
+}
+
+/* Rest of your existing CSS for the TeamCard component */
+.team-scroll-container {
+    margin-top: 150px;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.team-scroll-container:active {
+  cursor: grabbing;
+}
+
+.team-card-track {
+  display: flex;
+  width: max-content;
+  user-select: none;
+}
+
+.team-scroll-card {
+  width: 250px;
+  height: 400px;
+  background-color: #000000;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid #E0EEEE;
+  margin: 0 10px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-card-position {
+  font-size: 14px;
+}
+
+.team-card-content {
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #121315;
+  border-radius: 15px;
+  border: 1px solid #E0EEEE;
+}

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Project from './Project';
 import CardSection from '../Components/CardSection';
 import MarqueeText from './MarqueeText';
+import JungleTrekSection from './JungleTrekSection';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -149,6 +150,7 @@ const Home = () => {
 {/* 5 card imageas  */}
 <CardSection />
 <MarqueeText/>
+<JungleTrekSection/>
     </div>
   );
 };
