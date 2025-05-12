@@ -8,16 +8,17 @@ import AboutCard from "./Components/About/AboutCard.jsx";
 // import Project from "./Components/Project.jsx";
 // import CardSection from "./Components/CardSection.jsx";
 import DayNightToggle from './Components/DayNightToggle.jsx';
-
-import SmokeTrail from "./Components/SmokeTrail.jsx";
+ import SmokeTrail from "./Components/SmokeTrail.jsx";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+     
       <NavBar />
 <DayNightToggle/>
-<SmokeTrail/>
+ <SmokeTrail/> 
+
 {/* <CardSection/> */}
       <Routes>
         <Route path="/" element={<Home/>}/>

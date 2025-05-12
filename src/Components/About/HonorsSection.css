@@ -1,0 +1,23 @@
+.honors-section {
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+ 
+}
+
+.honors-section h1 {
+  font-size: 211.2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: -6px;
+   line-height: 155.52px;
+    font-family: "Dirtyline 36Daysoftype 2022";
+   color: #C5FCFC;
+}
+
+.honors-section p {
+  font-size: 28.8px;
+  line-height: 35px;
+  max-width: 800px;
+  margin: 0 auto;
+}

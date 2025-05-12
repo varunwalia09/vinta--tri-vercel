@@ -3,6 +3,8 @@ import './About.css';
 import AboutCard from './AboutCard';
 import TeamCard from './TeamCard';
 import AboutMarquee from './AboutMarquee';
+import HonorsSection from './HonorsSection';
+import AwardsSection from './Award/AwardsSection';
 import gsap from 'gsap';
 
 const About = () => {
@@ -72,6 +74,8 @@ const About = () => {
      <AboutCard />
      <TeamCard/>
      <AboutMarquee/>
+     <HonorsSection/>
+     <AwardsSection/>
      
     </>
   );

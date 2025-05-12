@@ -1184,8 +1184,8 @@ margin-right: 80px;
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  background-color: #000;
-  color: #E0EEEE;
+  /* background-color: #000; */
+  /* color: #E0EEEE; */
   font-size: 150px;  /* adjust as needed */
   font-weight: bold;
   width: 100%;

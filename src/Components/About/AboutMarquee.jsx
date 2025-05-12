@@ -31,6 +31,7 @@ const AboutMarquee = () => {
             <img src={logo} alt={`Logo ${index}`} className="about-marquee-img" />
           </div>
         ))}
+       <h1 className="about-marquee-heading-2">We've worked for</h1>
       </div>
     </div>
   );
