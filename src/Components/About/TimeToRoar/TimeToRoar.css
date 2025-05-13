@@ -22,11 +22,14 @@
 }
 
 .lets-talk-button {
-border: 2px solid #c4FBFB;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 20px;
-  font-size: 18px;
+border: 2px solid;
+background-color:  #c4FBFB;
+color: black;
+border-radius: 20px;
+  padding: 15px 40px;
+margin-left: 80vw; 
+  border-radius: 30px;
+  font-size: 16px;
   cursor: pointer;
   margin-top: 30px;
   z-index: 1;
@@ -56,7 +59,7 @@ border: 2px solid #c4FBFB;
 }
 
 /* For the curved line.  */
-.time-to-roar-container::after {
+/* .time-to-roar-container::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -67,4 +70,4 @@ border: 2px solid #c4FBFB;
   border: 2px solid #fff;
   border-left: transparent;
   border-top: transparent;
-}
+} */

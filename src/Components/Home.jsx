@@ -70,6 +70,7 @@ const Home = () => {
       </h2>
       <button type="submit">Explore Work</button>
       </section>
+      {/* 3card image section */}
       <section className="card-with-image" >
       <div className="text-content">
         <h2 className="card-title-7">LOFTLOOM</h2>
@@ -79,12 +80,13 @@ const Home = () => {
     </Link>
       </div>
       <div className="image-content">
-        <img src="./assets/conf-4.jpg" alt="Image description" className="card-image" />
+        <img src="./assets/h1.jpg" alt="Image description" className="card-image" />
       </div>
       </section>
+
       <section className="card-with-image-2">
   <div className="image-content-2">
-    <img src="./assets/logo.jpg" alt="Image description" className="card-image" />
+    <img src="./assets/h2.jpg" alt="Image description" className="card-image" />
   </div>
   <div className="text-content-8">
     <h2 className="card-title-8">MUSIC</h2>
@@ -95,7 +97,6 @@ const Home = () => {
   </div>
 </section>
 
-
 <section className="card-with-image-9" >
       <div className="text-content-9">
         <h2 className="card-title-9">TECHNIS</h2>
@@ -105,9 +106,10 @@ const Home = () => {
     </Link>
       </div>
       <div className="image-content-3">
-        <img src="./assets/conf-3.jpg" alt="Image description" className="card-image" />
+        <img src="./assets/h3.jpg" alt="Image description" className="card-image" />
       </div>
       </section>
+      {/* 3card image section end */}
       {/* fifth section */}
       <section className='fifth-section'>
         <h1>WHO</h1>

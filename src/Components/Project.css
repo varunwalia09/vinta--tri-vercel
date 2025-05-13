@@ -1,6 +1,6 @@
 /* eight section */
 .two-card-section {
-  margin-top: -190px;
+  margin-top: -320px;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -19,7 +19,7 @@
 
 .left-card {
   text-align: left;
-  margin-left: 170px;
+  margin-left: 70px;
   background-color: #121315;
 }
 .left-card:hover{
@@ -42,7 +42,6 @@
 }
 .card-title {
   font-size: 150px;
-  font-family: cursive;
   margin-top: 20px;
   text-align: left;
   margin-left: 30PX;
@@ -126,6 +125,7 @@
   color: black;
   cursor: pointer;
 }
+
 .left-card-3 {
   animation: slideInLeft 1.8s ease forwards;
 }

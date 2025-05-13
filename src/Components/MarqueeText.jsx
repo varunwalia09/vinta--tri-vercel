@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './MarqueeText.css';
 const MarqueeText = () => {
   return (
     <>

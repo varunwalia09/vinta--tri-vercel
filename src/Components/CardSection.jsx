@@ -1,10 +1,11 @@
 import React from 'react';
-
+import './CardSection.css';
 const CardSection = () => {
   const cards = [
     { logo: '/assets/logo5.jpg', name: 'Vinta', position: 'CEO' },
     { logo: '/assets/logo4.jpg', name: 'Diwakar Kalia', position: 'CTO' },
-    { logo: '/assets/logo3.jpg', name: 'Reza Hashmi', position: 'UI/UX' },
+    { logo: '/assets/logo4.jpg', name: 'Diwakar Kalia', position: 'CTO' },
+    { logo: '/assets/logo3.jpg', name: 'Reza Hashmi', position: 'UI/UX Designer' },
     { logo: '/assets/logo3.jpg', name: 'Varun Walia', position: 'Web Designer' },
     { logo: '/assets/logo7.jpg', name: 'Leisha', position: 'WordPress Developer' },
     { logo: '/assets/logo6.jpg', name: 'Manoj Kumar', position: 'Web Designer' },

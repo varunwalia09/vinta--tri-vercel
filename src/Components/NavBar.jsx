@@ -4,24 +4,33 @@ import gsap from 'gsap';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [shouldRenderMenu, setShouldRenderMenu] = useState(false);
+
   const navbarRef = useRef(null);
   const backgroundRef = useRef(null);
 
   const toggleMenu = () => {
+    if (!isOpen) {
+      setShouldRenderMenu(true); // Show menu before opening animation
+    }
     setIsOpen(!isOpen);
   };
 
   useEffect(() => {
     if (isOpen) {
-      gsap.to(backgroundRef.current, {
-        opacity: 0.6,
-        scale: 1.05,
-        duration: 1,
-        ease: 'power4.out',
-      });
+      // OPEN ANIMATION (upar se neeche)
+      gsap.fromTo(
+        backgroundRef.current,
+        { y: '-100%', opacity: 0 },
+        {
+          y: '0%',
+          opacity: 1,
+          duration: 1,
+          ease: 'power4.out',
+        }
+      );
 
       gsap.to(navbarRef.current, {
-        y: 0,
         opacity: 1,
         duration: 1,
         ease: 'power4.out',
@@ -36,17 +45,20 @@ const NavBar = () => {
         stagger: 0.2,
       });
     } else {
+      // CLOSE ANIMATION (neeche se upar)
       gsap.to(backgroundRef.current, {
+        y: '-100%',
         opacity: 0,
-        scale: 1,
-        duration: 0.7,
+        duration: 1.2,
         ease: 'power4.in',
+        onComplete: () => {
+          setShouldRenderMenu(false); // Hide after animation finishes
+        },
       });
 
       gsap.to(navbarRef.current, {
-        y: -100,
         opacity: 0,
-        duration: 0.7,
+        duration: 1,
         ease: 'power4.in',
       });
 
@@ -54,7 +66,7 @@ const NavBar = () => {
         opacity: 0,
         scale: 0.8,
         y: 30,
-        duration: 0.7,
+        duration: 1,
         ease: 'power4.in',
         stagger: -0.1,
       });
@@ -70,24 +82,17 @@ const NavBar = () => {
         ☰ <span className="menu-text">Menu</span>
       </div>
 
-      {isOpen && (
+      {shouldRenderMenu && (
         <div className="menu-fullscreen" ref={backgroundRef}>
           <div className="close-icon" onClick={toggleMenu}>
             ✖ <span className="close-text">Close</span>
           </div>
           <ul className="navbar-1" ref={navbarRef}>
-            <li className="menu-item">
-              <Link to="/" onClick={toggleMenu}>Home</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/about" onClick={toggleMenu}>About</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/skills" onClick={toggleMenu}>Projects</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-            </li>
+            <li className="menu-item"><Link to="/" onClick={toggleMenu}>Home</Link></li>
+            <li className="menu-item"><Link to="/about" onClick={toggleMenu}>About</Link></li>
+            <li className="menu-item"><Link to="/skills" onClick={toggleMenu}>Projects</Link></li>
+            <li className="menu-item"><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+            <li className="menu-item"><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
           </ul>
         </div>
       )}
@@ -96,9 +101,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
-
 
 
 // import React from 'react'

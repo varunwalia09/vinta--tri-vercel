@@ -1,0 +1,42 @@
+.footer-trionn-container {
+  padding: 20px 0 0; /* top padding only */
+}
+
+.footer-content {
+  padding: 0 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 19.2px;
+  margin-left: 40px;
+}
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  rotate: 90deg;
+  border: 2px solid #ADDDDE;
+    margin-right: 40px;
+}
+
+.scroll-top svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.footer-full-image {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMarquee.css';
 // scroling company working cards
 const logos = [
-  '/assets/logo1.jpg',
+  '/assets/logo5.jpg',
   '/assets/logo2.jpg',
   '/assets/logo3.jpg',
   '/assets/logo4.jpg',
@@ -10,6 +10,7 @@ const logos = [
   '/assets/logo6.jpg',
   '/assets/logo2.jpg',
   '/assets/logo3.jpg',
+  '/assets/logo7.jpg',
 ];
 
 const AboutMarquee = () => {

@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Peter Bushuev';
+  src: url('/fonts/peter-bushuev.woff') format('woff'),
+       url('/fonts/peter-bushuev.ttf') format('truetype'),
+       url('/fonts/peter-bushuev.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,7 +23,8 @@ body.day-mode {
 }
 
 body.night-mode {
-  background-color:#EDF2F2;
+  background-color: #121315;
+  /* background-color:#EDF2F2; */
   color:#E0EEEE;
 }
 
@@ -29,93 +39,6 @@ nav {
   margin-left: 40px;
 }
 
-.logo-1 {
-  display: inline-block;
-}
-
-.hamburger {
-  font-size: 28px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 1100;
-  cursor: pointer;
-  color: orangered;
-  margin-top: -20px;
- 
-}
-
-.menu-text {
-  font-size: 18px;
-  margin-left: 8px;
-}
-
-.menu-fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  /* background-color: rgba(0, 0, 0, 0.6); */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-
-.close-icon {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  font-size: 28px;
-  color: orangered;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.close-text {
-  font-size: 18px;
-  margin-left: 8px;
-}
-.navbar-1 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;  /* Stack items vertically */
-  align-items: center;
-}
-
-.navbar-1 li {
-  margin: 20px 0;
-}
-
-.navbar-1 li a {
-  color: #E0EEEE;
-  text-decoration: none;
-  font-size: 32px;
-}
-/* hamburger menu end */
-
-.top-1{
-  /* position: fixed; */
-  top: 0;
-  width: 100%;
-  z-index: 1000; 
-/* background-color: rgba(27, 27, 76, 0.698); */
-margin-top: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
-border-radius: 20px;
-/* background-color: rgba(255, 255, 255, 0.1); */
-backdrop-filter: blur(10px); 
-}
 .logo-1{
   font-size: 20px;
   text-decoration: none;
@@ -129,55 +52,77 @@ backdrop-filter: blur(10px);
   color: orangered;
   font-weight: bold;
 }
+.hamburger {
+  font-size: 28px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  z-index: 1100;
+  cursor: pointer;
+  color: orangered;
+  margin-top: -20px;
+}
 
-.top-1 .logo-1{
-  mix-blend-mode: normal;
-  animation: bounce 03s alternate infinite;
-  transition: transform 0.3s; 
-  transform: translateY(-10px);
+.menu-text {
+  font-size: 18px;
+  margin-left: 8px;
 }
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); 
-  }
-  50% {
-    transform: translateY(-10px); 
-  }
+
+.menu-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow: hidden;
 }
+
+.close-icon {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 28px;
+  color: orangered;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.close-text {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
 .navbar-1 {
   list-style: none;
-  display: flex;
-  justify-content: flex-end; 
-  margin: 0;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .navbar-1 li {
-  margin-left: 20px;
+  margin: 20px 0;
 }
 
-
-.navbar-1 a {
-  text-decoration: none; 
-  color: inherit;
+.navbar-1 li a {
+  color: #E0EEEE;
+  text-decoration: none;
+  font-size: 32px;
 }
 
- .navbar-1 li {
-  margin-right: 40px; 
-  color:white;
-  margin-bottom: 10px;
-  opacity: 1;
-  transition: 0.3s;
-  font-size: 20px;
-}
-.navbar-1 li::first-letter{
+.navbar-1 li::first-letter {
   color: orangered;
 }
 
-.navbar-1 li a.active,
-.navbar-1 li a:hover {
-  color: #ff4d01;
-  padding: 0.5rem 0;
-}
+
 /* day night toggle effetct Start*/
 .day-night-toggle {
   position: fixed;
@@ -235,11 +180,11 @@ backdrop-filter: blur(10px);
 
 }
 .home-section h1 {
-  font-size: 76.29px;
-  font-weight: bold;
-  line-height:4rem;
-  letter-spacing: 1px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 115.2px;
+  /* font-weight: bold; */
+  line-height:86.4px;
+  letter-spacing: -2px;
+ font-family: 'Peter Bushuev', sans-serif;
 }
 .h2-head {
   font: 12.8px;
@@ -359,16 +304,16 @@ backdrop-filter: blur(10px);
 .second-section h1{
   font-size: 129px;
   font-weight: bold;
-  font-family: cursive;
+ font-family: 'Peter Bushuev', sans-serif;
 }
 .third-section{
-  margin-top: -80px;
+  margin-top: -95px;
   margin-left: 80px;
 }
 .third-section h1{
   font-size: 120px;
   font-weight: bold;
-  font-family: cursive;
+font-family: 'Peter Bushuev', sans-serif;
 }
 
 .forth-section h2{
@@ -391,7 +336,7 @@ justify-self: end;
 margin-right: 80px;
 }
 
-/* card image */
+/* card-with-image */
 .card-with-image {
   margin-top: 80px;
   display: flex;
@@ -461,8 +406,8 @@ margin-right: 80px;
 }
 
 .card-image {
-  width: 600px;
-  height: auto;
+  width: 954.453px;
+  height: 636.297px;
   border-radius: 10px;
 }
 
@@ -475,8 +420,8 @@ margin-right: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    margin-top: -40px;
-    margin-right: -190px;
+    margin-top: 40px;
+    margin-right: -350px;
     /* margin-left: 60px; */
     transform: translateX(-100%) rotateY(180deg);
     animation: slideInRotate 5s forwards;
@@ -505,17 +450,17 @@ margin-right: 80px;
     font-size: 74px;
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 80px;
+    margin-left: 400px;
   }
   
   .card-description-8 {
     font-size: 22px;  
    margin-top: -10px;
-    margin-left: 80px;
+  margin-left: 400px;
   }
   
   .card-button-8 {
-    margin-left: 80px;
+    margin-left: 400px;
     padding: 10px 20px;
     font-size: 16px;
     color: #c4FBFB;
@@ -547,7 +492,7 @@ margin-right: 80px;
  
   /* card-Image-3 */
   .card-with-image-9 {
-    margin-top: -40px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -691,119 +636,6 @@ margin-right: 80px;
 }
 /* 10th and 11th  section End */
 
-
-/* 5 card images section  START*/
-.card-wrapper .card-section {
-  display: flex;
-  overflow-x: auto;
-  padding: 20px 0;
-  gap: 20px; /* Space between cards */
-  cursor: pointer;
-}
-
-/* Individual card styling */
-.card-wrapper .card {
-  margin-top: 100px;
-  width: 250px; /* Set width for each card */
-  height: 400px;
-   /* Set a fixed height for the card */
-  background-color: #000000;
-  border: 2px solid  #E0EEEE;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
-
-.card-wrapper .card:hover {
-  transform: translateY(-10px); /* Slight hover effect */
-}
-
-/* Logo styling */
-.card-wrapper .card-logo {
-  width: 120px; 
-  height: 120px; 
-  object-fit: cover; 
-  border-radius: 50%; 
-  margin-bottom: 20px; 
-}
-
-/* Card name styling */
-.card-wrapper .card-name {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: -20px;
-}
-
-/* Position styling */
-.card-wrapper .card-position {
-  font-size: 14px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Button styling */
-.card-wrapper .card-button {
-  padding: 10px 20px;
-  background-color: #121315;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  border: 1px solid  #E0EEEE;
-}
-
-.card-wrapper .card-button:hover {
-  background-color: #A1C9B8; /* Light green hover effect */
-}
-/* 5 card images section  END*/
-
-/* marquee text effect */
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  /* background-color: #000; */
-  /* color: #E0EEEE; */
-  font-size: 150px;  /* adjust as needed */
-  font-weight: bold;
-  width: 100%;
-  margin-bottom: -315px;
-  margin-top: 200px;
-}
-
-.marquee {
-  display: inline-flex;
-}
-
-.marquee-left {
-  animation: marquee-left 50s linear infinite;
-}
-
-.marquee-right {
-  animation: marquee-right 50s linear infinite;
-}
-
-.marquee h1 {
-  display: inline-block;
-  margin-right: 50px; /* gap between repeated texts */
-}
-
-@keyframes marquee-left {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes marquee-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
-}
 
 
 

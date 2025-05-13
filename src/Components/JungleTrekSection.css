@@ -1,28 +1,31 @@
-.card-container {
+.jungle-trek-container {
   margin-top: 500px;
   display: flex;
-  justify-content: space-between;
+
   max-width: 1200px;
-  /* margin: 0 auto; */
-  margin-left: 120px;
+ display: flex;
+  justify-content: center;         /* center inner columns */
+  align-items: center;  
   gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card-column {
+.jungle-trek-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1; /* To make both columns take up equal space */
+  flex: 1;
 }
 
-.card {
+.jungle-trek-card {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.jungle-trek-card img {
   width: 100%;
   height: auto;
   display: block;

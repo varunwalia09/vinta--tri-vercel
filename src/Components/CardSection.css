@@ -1,0 +1,73 @@
+
+/* 5 card images section  START*/
+.card-wrapper .card-section {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+  gap: 20px; /* Space between cards */
+  cursor: pointer;
+}
+
+/* Individual card styling */
+.card-wrapper .card {
+  margin-top: 100px;
+  width: 250px; /* Set width for each card */
+  height: 400px;
+   /* Set a fixed height for the card */
+  background-color: #000000;
+  border: 2px solid  #E0EEEE;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card-wrapper .card:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+}
+
+/* Logo styling */
+.card-wrapper .card-logo {
+  width: 120px; 
+  height: 120px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  margin-bottom: 20px; 
+}
+
+/* Card name styling */
+.card-wrapper .card-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* Position styling */
+.card-wrapper .card-position {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.card-wrapper .card-button {
+  padding: 10px 20px;
+  background-color: #121315;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border: 1px solid  #E0EEEE;
+}
+
+.card-wrapper .card-button:hover {
+  background-color: #A1C9B8; /* Light green hover effect */
+}
+/* 5 card images section  END*/
