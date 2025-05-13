@@ -129,7 +129,7 @@ const Home = () => {
           and deliver exceptional website and app <br/>
           <span>experiences</span></h1>
           <Link to='/about'>
-          <button className='about-button'>About</button>
+          <button className='about-button'>About Us</button>
          </Link>
           </section>
 {/* eight and ninth section combined */}

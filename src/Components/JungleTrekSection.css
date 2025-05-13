@@ -29,27 +29,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-column {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-column {
-    width: 100%;
-  }
-}
 
 
 /* .page11 {

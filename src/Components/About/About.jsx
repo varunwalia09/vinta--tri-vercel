@@ -5,6 +5,7 @@ import TeamCard from './TeamCard';
 import AboutMarquee from './AboutMarquee';
 import HonorsSection from './HonorsSection';
 import AwardsSection from './Award/AwardsSection';
+import TimeToRoar from './TimeToRoar/TimeToRoar';
 import gsap from 'gsap';
 
 const About = () => {
@@ -76,6 +77,7 @@ const About = () => {
      <AboutMarquee/>
      <HonorsSection/>
      <AwardsSection/>
+     <TimeToRoar/>
      
     </>
   );

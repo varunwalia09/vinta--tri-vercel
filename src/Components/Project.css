@@ -1,6 +1,6 @@
 /* eight section */
 .two-card-section {
-  margin-top: 190px;
+  margin-top: -190px;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -19,7 +19,7 @@
 
 .left-card {
   text-align: left;
-  margin-left: 70px;
+  margin-left: 170px;
   background-color: #121315;
 }
 .left-card:hover{
@@ -175,122 +175,6 @@
   line-height: 2rem;
 }
 
-/* media queries updated */
 
-@media (max-width: 1400px) {
-  .card, .card-3 {
-    width: 450px;
-    height: auto;
-  }
-
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 130px;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .card, .card-3 {
-    width: 400px;
-    height: auto;
-  }
-
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 110px;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 992px) {
-  .two-card-section,
-  .two-card-section-3 {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 0;
-  }
-
-  .card, .card-3 {
-    width: 90%;
-    height: auto;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-  }
-
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 90px;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 24px;
-    text-align: center;
-    margin: 0;
-  }
-
-  .left-card, .left-card-3,
-  .right-card-2, .right-card-4 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .right-card-2, .right-card-4 {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 60px;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 45px;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 18px;
-  }
-
-  .card, .card-3 {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  .card-title, .card-title-2,
-  .card-title-3, .card-title-4 {
-    font-size: 35px;
-  }
-
-  .card-description, .card-description-2,
-  .card-description-3, .card-description-4 {
-    font-size: 16px;
-  }
-}
 
 /* ninth card section End */

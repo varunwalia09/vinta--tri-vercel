@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 1px solid #333; /* Optional: adds the horizontal line */
+  border-bottom: 3px solid #333; /* Optional: adds the horizontal line */
 }
 
 .award-item-single:last-child {
@@ -22,10 +22,10 @@
 
 .award-name-single {
   font-size: 1rem;
-  color: #eee;
+  /* color: #eee; */
 }
 
 .award-description-single {
   font-size: 0.9rem;
-  color: #aaa;
+  /* color: #aaa; */
 }
