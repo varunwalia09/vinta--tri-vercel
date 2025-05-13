@@ -79,12 +79,12 @@ const Home = () => {
     </Link>
       </div>
       <div className="image-content">
-        <img src="./src/assets/conf-4.jpg" alt="Image description" className="card-image" />
+        <img src="./assets/conf-4.jpg" alt="Image description" className="card-image" />
       </div>
       </section>
       <section className="card-with-image-2">
   <div className="image-content-2">
-    <img src="./src/assets/logo.jpg" alt="Image description" className="card-image" />
+    <img src="./assets/logo.jpg" alt="Image description" className="card-image" />
   </div>
   <div className="text-content-8">
     <h2 className="card-title-8">MUSIC</h2>
@@ -105,7 +105,7 @@ const Home = () => {
     </Link>
       </div>
       <div className="image-content-3">
-        <img src="./src/assets/conf-3.jpg" alt="Image description" className="card-image" />
+        <img src="./assets/conf-3.jpg" alt="Image description" className="card-image" />
       </div>
       </section>
       {/* fifth section */}

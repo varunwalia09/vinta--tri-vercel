@@ -7,7 +7,7 @@ const Project = () => {
       {/* Eight Section */}
       <section className="two-card-section">
         <div className="card left-card">
-          <h2 className="card-title">500+</h2>
+          <h2 className="card-title">50+</h2>
           <p className="card-description">
             AWARDS & <br />
             <span>RECOGNITION</span>
