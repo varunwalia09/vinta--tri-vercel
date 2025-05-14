@@ -14,11 +14,9 @@
 
 .main-heading {
   font-size: 211.2px;
-  font-weight: bold;
-  margin: 0;
   line-height: 155.52px;
   letter-spacing: -6px;
-    font-family: "Dirtyline 36Daysoftype 2022";
+  font-family: 'Peter Bushuev', sans-serif;
 }
 
 .lets-talk-button {
@@ -37,21 +35,28 @@ margin-left: 80vw;
 }
 
 .contact-info {
+  font-size: 28.8px;
+  line-height: 35.52px;
+  font-family: 'Peter Bushuev', sans-serif;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid #c4FBFB;
+  border-top: 1px solid;
   padding-top: 20px;
   z-index: 1;
 }
 
 .info-line {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* row instead of column */
+  gap: 10px; /* spacing between label and value */
+  align-items: center; /* vertically center align */
 }
 
+
 .info-label {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .info-value {

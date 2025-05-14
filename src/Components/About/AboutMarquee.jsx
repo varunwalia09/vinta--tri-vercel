@@ -2,15 +2,15 @@ import React from 'react';
 import './AboutMarquee.css';
 // scroling company working cards
 const logos = [
-  '/assets/logo5.jpg',
-  '/assets/logo2.jpg',
-  '/assets/logo3.jpg',
-  '/assets/logo4.jpg',
-  '/assets/logo5.jpg',
-  '/assets/logo6.jpg',
-  '/assets/logo2.jpg',
-  '/assets/logo3.jpg',
-  '/assets/logo7.jpg',
+  '/assets/sport.png',
+  '/assets/universal.png',
+  '/assets/red.png',
+  '/assets/adidas.png',
+  '/assets/nike.png',
+  '/assets/subway.png',
+  '/assets/lg.png',
+  '/assets/sport.png',
+  '/assets/red.png',
 ];
 
 const AboutMarquee = () => {

@@ -32,8 +32,70 @@
   object-fit: cover;
 }
 
+/*  */
+.jungle-trek-section {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 400px; /* Adjust as needed */
+  position: relative;
+}
 
+.jungle-trek-text {
+  margin-bottom: 50px;
+}
 
+.jungle-trek-text h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 211.2px;
+  font-weight: bold;
+  margin-left: 430px;
+  line-height: 155.52px;
+  letter-spacing: -6px;
+}
+
+.dribbble-link {
+  margin-top: 30px;
+  margin-left: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid ;
+  padding-bottom: 20px;
+  width: 680px; /* Adjust width of the line */
+  /* justify-content: flex-start; */
+}
+
+.dribbble-link span {
+  margin-right: 480px;
+  font-size: 30px;
+}
+
+.dribbble-react-icon {
+  font-size: 50px; 
+  color: #ea4c89; 
+}
+.linkedin-react-icon {
+  font-size: 50px; 
+  color:#0A66C2; 
+}
+.instagram-react-icon {
+  font-size: 50px; 
+  color: red;
+}
+.facebook-react-icon {
+  font-size: 50px; 
+  color: #0A66C2; 
+}
+.behance-react-icon {
+  font-size: 50px; 
+  color:#0A66C2; 
+}
 /* .page11 {
   height: 400.4vh;
   padding-top: 2vw;

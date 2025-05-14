@@ -1,14 +1,17 @@
 
 /* marquee text effect */
 .marquee-container {
+   font-family: 'Peter Bushuev', sans-serif;
   overflow: hidden;
   white-space: nowrap;
   /* background-color: #000; */
   /* color: #E0EEEE; */
-  font-size: 150px;  /* adjust as needed */
+  font-size: 211.2px; 
+  letter-spacing: -2px;
+  line-height: 204.864px;
   font-weight: bold;
   width: 100%;
-  margin-bottom: -315px;
+  margin-bottom: -250px;
   margin-top: 200px;
 }
 

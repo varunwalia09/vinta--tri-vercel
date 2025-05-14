@@ -15,6 +15,7 @@ const JungleTrekSection = () => {
   ];
 
   return (
+    
     <div className="jungle-trek-container">
       <div className="jungle-trek-column">
         {leftImages.map((image) => (
@@ -32,6 +33,7 @@ const JungleTrekSection = () => {
         ))}
       </div>
     </div>
+    
   );
 };
 

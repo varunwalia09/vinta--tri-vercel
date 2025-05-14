@@ -12,7 +12,7 @@ function TimeToRoar() {
       <div className="contact-info">
         <div className="info-line">
           <span className="info-label">Email</span>
-          <span className="info-value">hello@trionn.com</span>
+          <span className="info-value">vintavere@.com</span>
         </div>
         <div className="info-line">
           <span className="info-label">Call</span>
@@ -20,7 +20,7 @@ function TimeToRoar() {
         </div>
         <div className="info-line">
           <span className="info-label">Skype</span>
-          <span className="info-value">talk.trionn</span>
+          <span className="info-value">talk.vinta</span>
         </div>
       </div>
     </div>

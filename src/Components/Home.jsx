@@ -6,29 +6,35 @@ import Project from './Project';
 import CardSection from '../Components/CardSection';
 import MarqueeText from './MarqueeText';
 import JungleTrekSection from './JungleTrekSection';
+
+import { FaDribbble, FaLinkedin, FaInstagram, FaFacebook, FaBehance } from 'react-icons/fa';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const videoContainerRef = useRef(null);
+const videoContainerRef = useRef(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const videoEl = videoContainerRef.current;
+    const video = videoRef.current;
 
     gsap.timeline({
       scrollTrigger: {
         trigger: videoEl,
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        // markers: true,  // uncomment to debug
+        start: 'top top', // Start the animation when the video enters the top of the page
+        end: 'bottom top', // End when the video reaches the top of the page
+        scrub: true, // Smoothly syncs animation with scroll
+        onEnter: () => video.play(), // Play the video when it enters the viewport
+        onLeaveBack: () => video.pause(), // Pause the video when it leaves the viewport
       },
     })
-    .fromTo(
-      videoEl,
-      { y: 0, scale: 1, borderRadius: '20px' },    // initial small + rounded
-      { y: -180, scale: 1.5, borderRadius: '0px', duration: 1 }  // zoom + no round
-    );
+      .fromTo(
+        videoEl,
+        { width: '100px', height: '100px', scale: 1, borderRadius: '40px' }, // Initial state: small size
+        { width: '150px', height: '100px', scale: 1.5, borderRadius: '4px', duration: 1 } // Final state: full screen
+      );
   }, []);
+
 
   return (
     <div>
@@ -40,12 +46,19 @@ const Home = () => {
           through versatile design, branding and the latest<br />
           tech development to companies.</h2>
       </section>
-      <button className="down-arrow-btn">↓</button>
+      <button className="down-arrow-btn"onClick={() => { window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    });
+  }}
+  >
+   ↓
+</button>
       <section className='home-btn'>
         <button type="submit">Explore Work</button>
-
-        <div className="video-animation" ref={videoContainerRef}>
+          <div className="video-animation" ref={videoContainerRef}>
           <video
+            ref={videoRef}
             className="video-animation-video"
             src="/vinta.mp4"
             muted
@@ -109,6 +122,7 @@ const Home = () => {
         <img src="./assets/h3.jpg" alt="Image description" className="card-image" />
       </div>
       </section>
+
       {/* 3card image section end */}
       {/* fifth section */}
       <section className='fifth-section'>
@@ -117,11 +131,10 @@ const Home = () => {
       </section>
 
       <section className='sixth-seection'>
-        <h2>As an award-winning agency<br/>
-          within the digital jungle,<br/>
-          TRIONN transcends<br/>
-          aesthetics, crafting your<br/>
-          visin into a legacy that<br/>
+        <h2>As an award-winning agency within<br/>
+          the digital jungle, TRIONN transcends<br/>
+          aesthetics, crafting your visin into a <br/>
+         legacy that<br/>
           endures.</h2>
       </section>
       <section className='seven-section'>
@@ -134,25 +147,40 @@ const Home = () => {
           <button className='about-button'>About Us</button>
          </Link>
           </section>
-{/* eight and ninth section combined */}
+   
     <Project />
-{/*eight and ninth section combined end */}
+  <CardSection />
+  <MarqueeText/>
+  <JungleTrekSection/>
 
-{/* 10th section */}
-   <section className='tenth-section'>
-    <h1>PARTNER <br/>LOVE</h1>
-   </section>
-   <section className='eleven-section'>
-          <h1>Take heed,as the<br/> 
-          lion's roar in our client<br/>
-          reviews resounds.
-          </h1>
-          </section>
-
-{/* 5 card imageas  */}
-<CardSection />
-<MarqueeText/>
-<JungleTrekSection/>
+{/* drible social icons sections */}
+<section className="jungle-trek-section">
+      <div className="jungle-trek-text">
+        <h1>JOIN OUR</h1>
+        <h1>JUNGLE</h1>
+        <h1>TREK</h1>
+      </div>
+      <div className="dribbble-link">
+        <span>Dribbble</span>
+      <FaDribbble className="dribbble-react-icon" />
+      </div>
+      <div className="dribbble-link">
+        <span>LinkedIn</span>
+        <FaLinkedin className="linkedin-react-icon" />
+      </div>
+      <div className="dribbble-link">
+        <span>Instagram</span>
+        <FaInstagram className="instagram-react-icon" />
+      </div>
+      <div className="dribbble-link">
+        <span>Facebook</span>
+        <FaFacebook className="facebook-react-icon" />
+      </div>
+      <div className="dribbble-link">
+        <span>Behance</span>
+        <FaBehance className="behance-react-icon" />
+      </div>
+    </section>
     </div>
   );
 };

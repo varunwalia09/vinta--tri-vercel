@@ -1,17 +1,18 @@
 /* TENTH-1 & ELEVEN-1 SECTION */
 .tenth-section-1 h1 {
-  font-size: 129px;
-  font-weight: bold;
+  font-family: 'Peter Bushuev', sans-serif;
+  font-size: 211.2px;
   margin-left: 60px;
   margin-top: 110px;
-  line-height: 6rem;
+  line-height: 155.52px;
+  letter-spacing: -6px;
 }
 
 .eleven-section-1 h1 {
-  font-size: 35px;
-  line-height: 2.8rem;
+  font-size: 28.8px;
+  line-height: 35.52px;
   justify-self: end;
-  margin-right: 60px;
+  margin-right: 80px;
   margin-bottom: -60px;
 }
 

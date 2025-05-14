@@ -40,14 +40,16 @@
     opacity: 1;
   }
 }
-.card-title {
+.card-title-a {
   font-size: 150px ;
   margin-top: 20px;
   margin-left: 20px;
   text-align: left;
+  font-family: 'Peter Bushuev', sans-serif;
 }
 
 .card-description {
+  font-family: 'Peter Bushuev', sans-serif;
   text-align: right;
   font-size: 35px;
   margin-right: 30px;
@@ -93,6 +95,7 @@
   font-size: 35px;
   margin-right: 30px;
   line-height: 2rem;
+  font-family: 'Peter Bushuev', sans-serif;
 }
 
 /* eight section end */
@@ -142,6 +145,7 @@
   font-size: 35px;
   margin-right: 30px;
   line-height: 2rem;
+  font-family: 'Peter Bushuev', sans-serif;
 }
 /* card-3 right-card-4 */
 .right-card-4 {
@@ -174,6 +178,7 @@
   font-size: 35px;
   margin-right: 30px;
   line-height: 2rem;
+  font-family: 'Peter Bushuev', sans-serif;
 }
 
 

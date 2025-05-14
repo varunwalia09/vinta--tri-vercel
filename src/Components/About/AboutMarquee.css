@@ -20,7 +20,8 @@
   height: 384px; /* <-- Control height here */
   /* background: #f9f9f9; */
   /* border: 2px solid white; */
-  background-color: #191C1E;
+    background-color: #191C1E;
+
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -29,7 +30,7 @@
 }
 
 .about-marquee-img {
-  width: 80px;
+  width: 200px;
   height: 80px;
   object-fit: cover;
   border-radius: 50%;

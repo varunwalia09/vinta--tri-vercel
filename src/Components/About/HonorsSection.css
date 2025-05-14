@@ -11,7 +11,7 @@
   margin-bottom: 20px;
   letter-spacing: -6px;
    line-height: 155.52px;
-    font-family: "Dirtyline 36Daysoftype 2022";
+ font-family: 'Peter Bushuev', sans-serif;
    /* color: #C5FCFC; */
 }
 
@@ -20,4 +20,5 @@
   line-height: 35px;
   max-width: 800px;
   margin: 0 auto;
+  font-family: 'Peter Bushuev', sans-serif;
 }
