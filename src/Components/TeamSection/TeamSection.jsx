@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './TeamSection.css';
 import TeamMember from './TeamMember'
+import JoinVinta from './JoinVinta';
+import VintaExpertise from './VintaJungle';
+import TeamTimeToRoar from './TeamTimeToRoar';
 import gsap from 'gsap';
 
 const TeamSection = () => {
@@ -57,6 +60,9 @@ const TeamSection = () => {
   </div>
 </section>
      <TeamMember/>
+     <JoinVinta/>
+     <VintaExpertise/>
+     <TeamTimeToRoar/>
     </>
   );
 };

@@ -22,12 +22,19 @@
 .team-cards-container::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+.team-cards-container {
+  scroll-behavior: auto;
+}
+
+.team-cards-container.active {
+  cursor: grabbing;
+}
 
 .team-card {
   flex: 0 0 auto; 
-  width: 500px; 
-  height: 600px;
-  border: 1px solid ;
+  width: 556.812px; 
+  /* height: 600px;  */
+  /* border: 1px solid ; */
   border-radius: 8px;
   margin-right: 20px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,24 +45,24 @@
 }
 
 .team-member-image {
-  width: 500px;
-  height: 500px; 
+  width: 700px;
+  height: 700px; 
   object-fit: cover; 
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+ border-radius: 20px;
 }
 
 .team-member-details {
+   margin-top: 15px;
   padding: 15px;
 }
 
 .team-member-details h3 {
-    margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 24px;
+  font-weight: bold;
   /* margin-bottom: 5px; */
 }
 
 .team-member-details p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 20.256px;
+    font-weight: bold;
 }

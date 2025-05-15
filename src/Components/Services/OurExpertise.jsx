@@ -33,7 +33,7 @@ const OurExpertise = () => {
             <img src={logo} alt={`Logo ${index}`} className="expertise-img" />
           </div>
         ))}
-        <h1 className="expertise-heading secondary">We've worked for</h1>
+        {/* <h1 className="expertise-heading secondary">We've worked for</h1> */}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const CardSection = () => {
      { logo: '/assets/logo5.jpg', name: 'Vinta', position: 'CEO', content: 'Watch Now' },
      { logo: '/assets/logo4.jpg', name: 'Diwakar Kalia', position: 'CTO', content: 'Watch Now' },
      { logo: '/assets/logo3.jpg', name: 'Reza Hashmi', position: 'UI/UX', content: 'Creative UI Expert' },
-     { logo: '/assets/logo3.jpg', name: 'Varun Walia', position: 'Web Designer', content: 'Frontend Developer' },
+     { logo: '/assets/varun.png', name: 'Varun Walia', position: 'Web Designer', content: 'Frontend Developer' },
      { logo: '/assets/logo7.jpg', name: 'Leisha', position: 'WordPress Developer', content: 'WordPress Ninja' },
      { logo: '/assets/logo6.jpg', name: 'Manoj Kumar', position: 'Web Designer', content: 'Design Specailist' },
    ];

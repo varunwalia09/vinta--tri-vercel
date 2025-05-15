@@ -14,7 +14,7 @@ import LetsTalkCircle from "./Components/LetsTalkCircle/LetsTalkCircle.jsx";
 import FooterTrionn from "./Components/Footer/FooterTrionn.jsx";
 import Loader from "./Components/loder/Loader.jsx";
 import TeamSection from "./Components/TeamSection/TeamSection.jsx";
-
+import WorkSection from "./Components/WorkSection/WorkSection.jsx";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -43,6 +43,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/teamsection" element={<TeamSection />} />
+          <Route path="/worksection" element={<WorkSection/>} />
         </Routes>
 
         <FooterTrionn />

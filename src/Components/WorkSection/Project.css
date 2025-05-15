@@ -1,0 +1,97 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 1rem;
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+
+.center-img {
+  height: 700px; /* Customize as needed */
+  width: 1240px;
+  border-radius: 30px;
+}
+
+.row-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 400px;
+  margin-top: 180px;
+  /* width: 100%; */
+  /* max-width: 1200px; */
+}
+
+/* Individual image styles — customize freely */
+.left-horizontal {
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.right-vertical {
+  width: 760px;
+  height: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.left-vertical {
+   width: 760px;
+  height: 500px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.right-horizontal {
+ width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/* .right-horizontal,
+.right-vertical {
+  margin-left: 8rem;
+} */
+.image-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* LEFT align text and image */
+  max-width: fit-content;
+  margin: 0 1rem;
+}
+
+.image-caption {
+  margin-top: 1rem;
+  font-size: 48PX;
+  line-height: 57.6PX;
+   font-family: 'Peter Bushuev', sans-serif;
+  text-align: left; /* ensure left alignment */
+}
+
+.image-description {
+  margin-top: 0.5rem;
+  font-size: 20.25PX;
+  max-width: 300px;
+  line-height: 28.8px;
+  text-align: left; /* ensure left alignment */
+}
+.image-with-text {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.image-with-text img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-with-text img:hover {
+  transform: scale(1.08);
+}
