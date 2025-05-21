@@ -1,0 +1,57 @@
+/* Section for the About page */
+@font-face {
+  font-family: 'Peter Bushuev';
+  src: url('/fonts/peter-bushuev.woff') format('woff'),
+       url('/fonts/peter-bushuev.ttf') format('truetype'),
+       url('/fonts/peter-bushuev.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+.work-about-section {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  /* background-color: #f4f4f4; */
+}
+
+/* Container for centering content */
+.work-about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Style for the content block */
+.work-about-content h1 {
+  font-family: 'Peter Bushuev', sans-serif;
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  font-size: 93.12px;
+  font-weight: bold;
+  line-height: 70.8px;
+  letter-spacing: -2px;
+}
+
+/* Style for the description text */
+.work-about-description {
+  margin-top: 20px;
+  font-size: 12.48px; /* Adjust text size */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* color: #555;  */
+  max-width: 800px; /* Limit the width of the text */
+  line-height: 16.32px;
+  font-family: 'Peter Bushuev', sans-serif;
+}
+
+/* 
+color: #c4FBFB;
+ border: 2px solid #c4FBFB; */

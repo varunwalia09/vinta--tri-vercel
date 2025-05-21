@@ -1,0 +1,43 @@
+
+/* marquee text effect */
+.marquee-container {
+   font-family: 'Peter Bushuev', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  /* background-color: #000; */
+  /* color: #E0EEEE; */
+  font-size: 211.2px; 
+  letter-spacing: -2px;
+  line-height: 204.864px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: -250px;
+  margin-top: 200px;
+}
+
+.marquee {
+  display: inline-flex;
+}
+
+.marquee-left {
+  animation: marquee-left 50s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 50s linear infinite;
+}
+
+.marquee h1 {
+  display: inline-block;
+  margin-right: 50px; /* gap between repeated texts */
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}

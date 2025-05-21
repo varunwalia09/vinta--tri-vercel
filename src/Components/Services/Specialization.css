@@ -1,0 +1,205 @@
+.specialization-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d0e10;
+  color: #e8ffff;
+  border-radius: 30px;
+  padding: 60px 80px;
+  gap: 60px;
+  width: 1636.22px;
+  height: 523.03px;
+  box-sizing: border-box;
+  margin-left: 120px;
+  margin-top: 100px;
+}
+
+.specialization-left {
+  position: relative;
+  flex: 1;
+}
+
+.glow-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #c4fbfb;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #c4fbfb;
+  margin-bottom: 30px;
+}
+
+.specialization-title {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Dirtyline 36Daysoftype 2022";
+  line-height: 1;
+}
+
+.specialization-right {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.specialization-description {
+  font-size: 20.256px;
+  line-height: 28.8px;
+  max-width: 700px;
+}
+
+.specialization-columns {
+  display: flex;
+  gap: 60px;
+}
+
+.specialization-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specialization-columns li {
+  font-size: 28px;
+  line-height: 31.68px;
+  margin-bottom: 12px;
+  height: 31.6875px;
+  width: 273.688px;
+}
+
+
+/* second card css */
+.branding-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d0e10;
+  color: #e8ffff;
+  border-radius: 30px;
+  padding: 60px 80px;
+  gap: 60px;
+  width: 1636.22px;
+  height: 523.03px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.branding-left {
+  position: relative;
+  flex: 1;
+}
+
+.branding-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #c4fbfb;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #c4fbfb;
+  margin-bottom: 30px;
+}
+
+.branding-title {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Dirtyline 36Daysoftype 2022";
+  line-height: 1;
+}
+
+.branding-right {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.branding-description {
+  font-size: 20.256px;
+  line-height: 28.8px;
+  max-width: 700px;
+}
+
+.branding-columns {
+  display: flex;
+  gap: 60px;
+}
+
+.branding-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.branding-columns li {
+  font-size: 28px;
+  line-height: 31.68px;
+  margin-bottom: 12px;
+  height: 31.6875px;
+  width: 273.688px;
+}
+/* third card */
+.development-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d0e10;
+  color: #e8ffff;
+  border-radius: 30px;
+  padding: 60px 80px;
+  gap: 60px;
+  width: 1636.22px;
+  height: 523.03px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.development-left {
+  position: relative;
+  flex: 1;
+}
+
+.development-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #c4fbfb;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #c4fbfb;
+  margin-bottom: 30px;
+}
+
+.development-title {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Dirtyline 36Daysoftype 2022";
+  line-height: 1;
+}
+
+.development-right {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.development-description {
+  font-size: 20.256px;
+  line-height: 28.8px;
+  max-width: 700px;
+}
+
+.branding-columns {
+  display: flex;
+  gap: 60px;
+}
+
+.development-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.development-columns li {
+  font-size: 28px;
+  line-height: 31.68px;
+  margin-bottom: 12px;
+  height: 31.6875px;
+  width: 273.688px;
+}

@@ -1,0 +1,33 @@
+.awards-section-single {
+  padding: 50px 0; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  font-family: 'Peter Bushuev', sans-serif;
+}
+
+.awards-list-single {
+  width: 80%; /* Adjust width as needed */
+}
+
+.award-item-single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  
+  border-bottom: 3px solid ; /* Optional: adds the horizontal line */
+}
+
+.award-item-single:last-child {
+  border-bottom: none;
+}
+
+.award-name-single {
+  font-size: 1rem;
+  /* color: #eee; */
+}
+
+.award-description-single {
+  font-size: 0.9rem;
+  /* color: #aaa; */
+}

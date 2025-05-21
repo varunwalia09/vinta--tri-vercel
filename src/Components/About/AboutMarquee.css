@@ -1,0 +1,69 @@
+.about-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 950px; /* <-- Control height here */
+  position: relative;
+  cursor: grab;
+  margin-top: 150px;
+}
+
+.about-marquee-track {
+  display: flex;
+  gap: 10px;
+  animation: scrollMarquee 20s linear infinite;
+  width: fit-content;
+}
+
+.about-marquee-card {
+  flex: 0 0 auto;
+  width: 384px; /* <-- Control width here */
+  height: 384px; /* <-- Control height here */
+  /* background: #f9f9f9; */
+  /* border: 2px solid white; */
+    background-color: #191C1E;
+
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-marquee-img {
+  width: 200px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Animation */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Distance between rows */
+}
+
+/* Second track will scroll in the same direction */
+.about-marquee-wrapper .about-marquee-track:nth-child(2) {
+  animation: scrollMarquee 20s linear infinite;
+}
+/* Reverse direction for second row */
+.about-marquee-wrapper .about-marquee-track:nth-child(3) {
+  animation-direction: reverse;
+}
+
+.about-marquee-heading{
+   text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add margin for spacing */
+}

@@ -1,0 +1,975 @@
+@font-face {
+  font-family: 'Peter Bushuev';
+  src: url('/fonts/peter-bushuev.woff') format('woff'),
+       url('/fonts/peter-bushuev.ttf') format('truetype'),
+       url('/fonts/peter-bushuev.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+  padding-top: 60px; 
+  overflow-x: hidden;
+}
+body.day-mode {
+  background-color: #EDF2F2;
+  color:#3F4144;
+}
+
+body.night-mode {
+  background-color: #121315;
+  /* background-color:#EDF2F2; */
+  color:#E0EEEE;
+}
+
+
+
+/* home section start */
+/* hamburger menu start */
+nav {
+  position: relative;
+  z-index: 1000;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+.logo-1{
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.logo-1 p{
+  margin: 0;
+  font-size: 1.3em;
+  padding: 10px;
+  color: orangered;
+  font-weight: bold;
+}
+.hamburger {
+  font-size: 28px;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  z-index: 1100;
+  cursor: pointer;
+  color: orangered;
+  margin-top: -20px;
+}
+
+.menu-text {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.menu-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+.close-icon {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 28px;
+  color: orangered;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.close-text {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.navbar-1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-1 li {
+  margin: 20px 0;
+}
+
+.navbar-1 li a {
+  color: #E0EEEE;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.navbar-1 li::first-letter {
+  color: orangered;
+}
+
+
+/* day night toggle effetct Start*/
+.day-night-toggle {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3000;
+}
+
+.day-night-toggle button {
+  background: none;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+.day-night-toggle button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.day-mode .day-night-toggle button {
+  border-color: #333;  /* Day mode border color */
+  color: #333;
+}
+
+.day-night-toggle button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toggle-text {
+  margin-left: 8px;
+}
+
+
+/* day night toggle effetct END */
+
+/* HOME PAGE START */
+/* Default Styles (For desktop and larger screens) */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  text-align: center;
+  margin-top: -180px;
+
+}
+.home-section h1 {
+  font-size: 115.2px;
+  /* font-weight: bold; */
+  line-height:86.4px;
+  letter-spacing: -2px;
+ font-family: 'Peter Bushuev', sans-serif;
+}
+.h2-head {
+   font-family: 'Peter Bushuev', sans-serif;
+  font: 12.48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 16.32px;
+}
+.h2-head {
+  margin-top: -380px; /* Optional: Small gap between h1 and h2 */
+}
+
+.home-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #c4FBFB;
+  background-color: #000000;
+  border: 2px solid  #c4FBFB;
+  margin-top: 250px;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+
+/* DOWN ARROW BUTTON */
+.down-arrow-btn {
+  margin: 20px auto;
+  display: block;
+  background: none;
+  color: #c4FBFB;
+  border: 2px solid #c4FBFB;
+  border-radius: 50%;
+  width: 40px; /* fixed width */
+  height: 40px; /* fixed height */
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(5px); }
+}
+
+/* Video Animation */
+/* Position the video initially small */
+.video-animation {
+  position: absolute;
+  top: 80%; /* Position video below the down arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Initial small size */
+  height: 300px; /* Initial small size */
+  transition: all 0.5s ease; /* Smooth transition for resizing */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden;
+  z-index: 10;
+  opacity: 0.9;
+   margin-top: -40px;
+}
+
+.video-animation-video {
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the container properly */
+}
+
+
+/* .video-animation-video {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  width: 400px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+} */
+/* video part end */
+
+/* .video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  width: 200px; 
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.video-container video {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.video-container.zoom {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5); 
+  width: 80vw;
+  max-width: 1000px;
+  z-index: 999;
+ 
+} */
+/* day night toggle part end */
+
+/* second-section */
+.second-section{
+  margin-top: 690px;
+  margin-left: 80px;
+}
+.second-section h1{
+  font-size: 129px;
+  font-weight: bold;
+ font-family: 'Peter Bushuev', sans-serif;
+}
+.third-section{
+  margin-top: -95px;
+  margin-left: 80px;
+}
+.third-section h1{
+  font-size: 120px;
+  font-weight: bold;
+font-family: 'Peter Bushuev', sans-serif;
+}
+
+.forth-section h2{
+  margin-left: 20px;
+font-size: 28.8px;
+line-height: 35.52px;
+margin-left: 80px;
+ font-family: 'Peter Bushuev', sans-serif;
+font-weight: bold;
+}
+.forth-section button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #c4FBFB;
+display: grid;
+justify-self: end;
+margin-right: 130px;
+}
+
+/* card-with-image */
+.card-with-image {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 100px;
+  transform: translateX(-100%) rotateY(180deg);
+  animation: slideInRotate 3s forwards;
+}
+
+
+@keyframes slideInRotate {
+  from {
+    transform: translateX(-100%) rotateY(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+.text-content {
+  width: 50%; /* Adjust width of text content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.card-title-7 {
+   font-family: 'Peter Bushuev', sans-serif;
+  font-size: 76.8px;
+  line-height: 76.8px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.card-description-7 {
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20.256px;
+  line-height: 28.8px;
+   margin-bottom: 10px;
+  margin-left: 60px;
+}
+
+.card-button-7 {
+  margin-left: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+    color: #c4FBFB;
+    background-color: #000000;
+    border: 2px solid  #c4FBFB;
+    border-radius: 30px;
+    cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;  /* Ensure the width adapts to the content */
+  max-width: 150px;  /* Set a maximum width if needed */
+  margin-top: 10px;  /* Adjust spacing between text and button */
+}
+
+
+.image-content {
+  width: 50%; /* Adjust width of image content */
+  display: flex;
+  justify-content: center;
+}
+
+.card-image {
+  width: 954.453px;
+  height: 636.297px;
+  border-radius: 10px;
+}
+
+  .card-with-image-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #fff; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-right: -350px;
+    /* margin-left: 60px; */
+    transform: translateX(-100%) rotateY(180deg);
+    animation: slideInRotate 5s forwards;
+  }
+ 
+
+  @keyframes slideInRotate {
+    from {
+      transform: translateX(-100%) rotateY(180deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) rotateY(0deg);
+      opacity: 1;
+    }
+  }
+  .text-content-8 {
+    width: 50%; /* Adjust width of text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+  }
+  
+  .card-title-8 {
+    font-size: 76.8px;
+    line-height: 76.8px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+  
+  .card-description-8 {
+    font-size: 20.256px;  
+    line-height: 28.8px;
+   margin-top: -10px;
+  margin-left: 400px;
+  }
+  
+  .card-button-8 {
+    margin-left: 400px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #c4FBFB;
+    background-color: #000000;
+    border: 2px solid  #c4FBFB;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;  /* Ensure the width adapts to the content */
+    max-width: 150px;  /* Set a maximum width if needed */
+    margin-top: 10px;  /* Adjust spacing between text and button */
+  }
+  
+  
+  .image-content-2 {
+    width: 50%; /* Adjust width of image content */
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .card-image-2 {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* margin-top: -50px; */
+    
+  }
+ 
+  /* card-Image-3 */
+  .card-with-image-9 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 80px;
+    transform: translateX(-100%) rotateY(180deg);
+    animation: slideInRotate 10s forwards;
+  }
+ 
+
+  @keyframes slideInRotate {
+    from {
+      transform: translateX(-100%) rotateY(-180deg);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0) rotateY(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .text-content-9 {
+    width: 50%; /* Adjust width of text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    font-size: 30px;
+  }
+  
+  .card-title-9 {
+    font-size: 76.8px;
+    line-height: 76.8px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  
+  .card-description-9 {
+    font-size: 20.256px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+  
+  .card-button-9 {
+    margin-left: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #c4FBFB;
+    background-color: #000000;
+    border: 2px solid  #c4FBFB;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;  /* Ensure the width adapts to the content */
+    max-width: 150px;  /* Set a maximum width if needed */
+    margin-top: 10px;  /* Adjust spacing between text and button */
+  }
+  
+  .image-content-3 {
+    width: 50%; /* Adjust width of image content */
+    display: flex;
+    justify-content: center;
+  }
+  .card-image-3 {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+  
+  }
+  
+/* fifth section */
+.fifth-section h1{
+  font-size: 211.2px;
+  letter-spacing: -6px;
+  line-height: 155.52px; 
+  font-family: 'Peter Bushuev', sans-serif;
+ margin-left: 60px;
+ margin-top: 110px;
+}
+.fifth-section h2{
+   font-family: 'Peter Bushuev', sans-serif;
+  font-size: 211.2px;
+    letter-spacing: -6px;
+  line-height: 155.52px; 
+  margin-left: 70px;
+  margin-top: 5px;
+}
+
+.sixth-seection{
+   font-family: 'Peter Bushuev', sans-serif;
+  margin-top: 10px;
+  font-size: 48px;
+  margin-left: 70px;
+  line-height: 57.6px;
+}
+.seven-section h1 {
+   font-family: 'Peter Bushuev', sans-serif;
+  text-align: right;   
+  margin-right: 100px;  
+  font-size: 20.256px;   
+  line-height: 28.8px;   
+  margin-top: 80px;
+}
+.seven-section h1 span{
+  margin-right: 260px;
+}
+.about-button{
+ margin-left: 1420px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #c4FBFB;
+  background-color: #000000;
+  border: 2px solid  #c4FBFB;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120px;  /* Ensure the width adapts to the content */
+  max-width: 150px;  /* Set a maximum width if needed */
+  margin-top: 30px;  /* Adjust spacing between text and button */
+}
+
+
+/* 10th and 11th section start */
+.tenth-section h1{
+  font-size: 129px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 110px;
+  line-height: 6rem;
+   font-family: 'Peter Bushuev', sans-serif;
+}
+.eleven-section h1{
+   font-family: 'Peter Bushuev', sans-serif;
+  font-size: 35px;
+  line-height: 2.8rem;
+  justify-self: end;
+  margin-right: 60px;
+ margin-bottom: -60px;
+}
+
+.eleven-section {
+   font-family: 'Peter Bushuev', sans-serif;
+  margin-top: -100px;  /* move the whole section up */
+}
+/* 10th and 11th  section End */
+
+
+/* jungle-trek-section social icons */
+.jungle-trek-section {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 400px; /* Adjust as needed */
+  position: relative;
+}
+
+.jungle-trek-text {
+  margin-bottom: 50px;
+}
+
+.jungle-trek-text h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 211.2px;
+  font-weight: bold;
+  margin-left: 430px;
+  line-height: 155.52px;
+  letter-spacing: -6px;
+}
+
+.dribbble-link {
+  margin-top: 30px;
+  margin-left: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid ;
+  padding-bottom: 20px;
+  width: 680px; /* Adjust width of the line */
+  /* justify-content: flex-start; */
+}
+
+.dribbble-link span {
+  margin-right: 480px;
+  font-size: 30px;
+}
+
+.dribbble-react-icon {
+  font-size: 50px; 
+  color:white; 
+}
+.linkedin-react-icon {
+  font-size: 50px; 
+   color:white; 
+}
+.instagram-react-icon {
+  font-size: 50px; 
+    color:white; 
+}
+.facebook-react-icon {
+  font-size: 50px; 
+   color:white; 
+}
+.behance-react-icon {
+  font-size: 50px; 
+   color:white; 
+}
+
+
+.dribbble-link {
+  justify-content: space-between;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dribbble-link span,
+.dribbble-link svg {
+  transition: transform 1s ease;
+  position: relative;
+}
+
+/* On hover: text moves more left, icon moves more right */
+.dribbble-link:hover span {
+  transform: translateX(-180px); /* text left */
+}
+
+.dribbble-link:hover svg {
+  transform: translateX(180px) rotate(360deg); /* icon right + rotate */
+}
+
+.dribbble-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;                /* center align */
+  /* height: 1px; */
+  width: 100px;  
+  border: 1px solid;           
+  /* border-radius: 1px; */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);  /* shift half width left */
+}
+
+.dribbble-link:hover::after {
+  width: 1000px;            /* big width on hover */
+  left: 50%;                /* still center aligned */
+  transform: translateX(-50%);  /* keep centered */
+}
+
+/* Large desktops and bigger (optional) */
+@media (min-width: 1200px) {
+  /* Usually keep desktop styles or enhance */
+}
+
+/* Medium desktops / laptops */
+@media (max-width: 1199px) {
+  .home-section h1 {
+    font-size: 80px;
+    line-height: 70px;
+    margin-top: -100px;
+  }
+  .second-section h1,
+  .third-section h1 {
+    font-size: 80px;
+  }
+  .card-with-image, .card-with-image-2, .card-with-image-9 {
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .text-content, .image-content,
+  .text-content-8, .image-content-2,
+  .text-content-9, .image-content-3 {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .card-image, .card-image-2, .card-image-3 {
+    width: 100%;
+    height: auto;
+  }
+  .about-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding-top: 40px;
+  }
+  .home-section h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: -60px;
+  }
+  .h2-head {
+    font-size: 14px;
+    margin-top: -200px;
+  }
+  .home-btn {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .home-btn button {
+    margin-top: 20px;
+  }
+  .second-section h1, .third-section h1,
+  .fifth-section h1, .fifth-section h2 {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+  .card-with-image, .card-with-image-2, .card-with-image-9 {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .card-title-7, .card-title-8, .card-title-9 {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .card-description-7, .card-description-8, .card-description-9 {
+    margin-left: 0;
+  }
+  .card-button-7, .card-button-8, .card-button-9 {
+    margin-left: 0;
+  }
+  .about-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jungle-trek-text h1 {
+    font-size: 80px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .dribbble-link {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+  .dribbble-link span {
+    margin-right: 0;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .home-section h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: -30px;
+  }
+  .h2-head {
+    font-size: 12px;
+    margin-top: -150px;
+  }
+  .home-btn button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .second-section h1, .third-section h1,
+  .fifth-section h1, .fifth-section h2 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+  .card-title-7, .card-title-8, .card-title-9 {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .card-description-7, .card-description-8, .card-description-9 {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .card-button-7, .card-button-8, .card-button-9 {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .about-button {
+    width: 100%;
+    margin: 20px 0;
+  }
+  nav {
+    margin-left: 10px;
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .jungle-trek-text h1 {
+    font-size: 50px;
+    margin-left: 0;
+  }
+  .dribbble-link {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+/*  border-color: #c4FBFB;
+  color: #E0EEEE; */
+  /* font-family: 'Dirtyline 36Daysoftype 2022', sans-serif; */
+  /* style={{ fontFamily: 'Dirtyline 36Daysoftype 2022, sans-serif' }} */
+  /* font-face {
+    font-family: 'Dirtyline';
+    src: url('/assets/fonts/dirtyline/Dirtyline.woff2') format('woff2'),
+         url('/assets/fonts/dirtyline/Dirtyline.woff') format('woff'),
+         url('/assets/fonts/dirtyline/Dirtyline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+   /* Left button */
+/* .home-btn button:first-child {
+  border-color: #c4FBFB;
+  color: #E0EEEE;
+} */
+
+/* Right button */
+/* .home-btn button:last-child {
+  border-color: #c4FBFB;
+  color: #E0EEEE;
+} */
+ 
+/* eight card section button code
+.card-button-2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+} */

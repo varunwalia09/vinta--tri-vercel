@@ -1,0 +1,62 @@
+.vintalogo-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 950px;
+  position: relative;
+  cursor: grab;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vintalogo-track {
+  display: flex;
+  gap: 10px;
+  animation: scrollVintaLogo 20s linear infinite;
+  white-space: nowrap;
+}
+
+.vintalogo-track.reverse {
+  animation-direction: reverse;
+}
+
+.vintalogo-card {
+  flex: 0 0 auto;
+  width: 384px;
+  height: 384px;
+  background-color: #191C1E;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vintalogo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; /* agar card ke border-radius se match karna ho */
+}
+
+@keyframes scrollVintaLogo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.vintalogo-heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.vintalogo-heading.secondary {
+  margin-top: 20px;
+}

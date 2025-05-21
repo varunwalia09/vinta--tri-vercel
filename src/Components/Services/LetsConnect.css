@@ -1,0 +1,220 @@
+
+.letsconnect-wrapper {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.letsconnect-heading {
+   font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 211.2px;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  line-height: 155.52px;
+  letter-spacing: -6px;
+  text-align: center;
+}
+
+.letsconnect-description {
+  font-size: 28.8px;
+  margin-bottom: 30px;
+  line-height: 35.52px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.letsconnect-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.letsconnect-glow {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(162,245,255,0.4) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  filter: blur(30px);
+  animation: glowMove 6s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes glowMove {
+  0% { top: 20px; left: 40px; }
+  100% { top: -20px; left: 20px; }
+}
+
+.letsconnect-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px 0;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+  max-width: 100%;
+}
+
+.letsconnect-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.letsconnect-card {
+  flex: 0 0 auto;
+  width: 600px;
+  height: 700px;
+  border: 1px solid #d5ffff30;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card-number {
+  font-size: 42.24px;
+  font-weight: bold;
+   font-family: "Dirtyline 36Daysoftype 2022";
+}
+
+.card-title {
+  font-size: 42.24px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-top: 10px;
+  text-align: left;
+   font-family: "Dirtyline 36Daysoftype 2022";
+}
+
+.card-points {
+  list-style: none;
+  padding: 0;
+  margin-top: auto;
+  font-size: 20.256px;
+  line-height: 25.8px;
+   font-family: "Dirtyline 36Daysoftype 2022";
+}
+
+
+
+
+
+
+
+/* 
+.letsconnect-wrapper {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.letsconnect-heading {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.letsconnect-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.letsconnect-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid ;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.letsconnect-btn:hover {
+  background-color: #a2f5ff10;
+  transform: scale(1.05);
+}
+
+.letsconnect-glow {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(162,245,255,0.4) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  filter: blur(30px);
+  animation: glowMove 6s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes glowMove {
+  0% {
+    top: 20px;
+    left: 40px;
+  }
+  100% {
+    top: -20px;
+    left: 20px;
+  }
+}
+
+.letsconnect-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px 0;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+}
+
+.letsconnect-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.letsconnect-card {
+  flex: 0 0 auto;
+  width: 320px;
+  height: 420px;
+  border: 1px solid #d5ffff30;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.card-points {
+  list-style: none;
+  padding: 0;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.8;
+} */

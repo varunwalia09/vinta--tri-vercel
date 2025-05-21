@@ -1,0 +1,173 @@
+/* TENTH-1 & ELEVEN-1 SECTION */
+.tenth-section-1 h1 {
+  font-family: 'Peter Bushuev', sans-serif;
+  font-size: 211.2px;
+  margin-left: 60px;
+  margin-top: 110px;
+  line-height: 155.52px;
+  letter-spacing: -6px;
+}
+
+.eleven-section-1 h1 {
+  font-size: 28.8px;
+  line-height: 35.52px;
+  justify-self: end;
+  margin-right: 80px;
+  margin-bottom: -60px;
+}
+
+.eleven-section {
+  margin-top: -100px; /* move the whole section up */
+}
+
+/* Rest of your existing CSS for the TeamCard component */
+.team-scroll-container {
+    margin-top: 150px;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.team-scroll-container:active {
+  cursor: grabbing;
+}
+
+.team-card-track {
+  display: flex;
+  width: max-content;
+  user-select: none;
+}
+
+.team-scroll-card {
+  width: 250px;
+  height: 400px;
+  background-color: #000000;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid #E0EEEE;
+  margin: 0 10px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-card-position {
+  font-size: 14px;
+}
+
+.team-card-content {
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #121315;
+  border-radius: 15px;
+  border: 1px solid #E0EEEE;
+}
+
+@media (max-width: 640px) {
+  .tenth-section-1 h1 {
+    font-size: 100px;
+    margin-left: 20px;
+    margin-top: 60px;
+    line-height: 75px;
+    letter-spacing: -3px;
+  }
+
+  .eleven-section-1 h1 {
+    font-size: 25px;
+    line-height: 24px;
+    margin-right: 55%;
+    margin-top:15px;
+    margin-bottom: -30px;
+  }
+
+  .eleven-section {
+    margin-top: -50px;
+  }
+
+  .team-scroll-card {
+    width: 200px;
+    height: 320px;
+    padding: 16px;
+  }
+
+  .team-card-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-card-name {
+    font-size: 18px;
+  }
+
+  .team-card-position {
+    font-size: 12px;
+  }
+
+  .team-card-content {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tenth-section-1 h1 {
+    font-size: 140px;
+    margin-left: 40px;
+    margin-top: 90px;
+    line-height: 102px;
+    letter-spacing: -4px;
+  }
+
+  .eleven-section-1 h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-right: 60%;
+    margin-bottom: -45px;
+  }
+
+  .eleven-section {
+    margin-top: -80px;
+  }
+
+  .team-scroll-card {
+    width: 220px;
+    height: 360px;
+    padding: 18px;
+  }
+
+  .team-card-logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-card-name {
+    font-size: 19px;
+  }
+
+  .team-card-position {
+    font-size: 13px;
+  }
+
+  .team-card-content {
+    font-size: 15px;
+  }
+}
+
+
+/* !important; */

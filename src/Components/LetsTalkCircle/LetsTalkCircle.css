@@ -1,0 +1,80 @@
+.lets-talk-container {
+  position: fixed;
+  right: 5px;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* Outer Circle */
+.outer-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid orangered; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotate-circle 10s linear infinite;
+}
+
+/* Rotating Text */
+.rotating-text {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+}
+
+.rotating-text textPath {
+  animation: text-loop 10s linear infinite;
+}
+
+/* Inner Circle (Logo) */
+.inner-circle {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid orangered;
+  /* background-color: #121315; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+top: 30px;
+left: 30px;
+  z-index: 2;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: none;
+}
+
+/* Animations */
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes text-loop {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
